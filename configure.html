@@ -1,11 +1,11 @@
 
 
    <!DOCTYPE html>
-   <!-- <html style="background-image: url(https://orionoid.com/web/images/background/banner.jpg);"> -->
+   <!-- <html style="background-image: url(https://www.v-net.tv/wp-content/uploads/2022/03/wall-of-screens-for-web-istock-Vertigo3d.jpg);"> -->
    <html style="background-image: url(<%=MANIFEST.background%>);">
    <head>
       <meta charset="utf-8">
-      <title>Your IPTV - Stremio Addon</title>
+      <title>STREMIO-SPAIN IPTV - Stremio Addon</title>
       <!-- <script src="/cdn-cgi/apps/head/dTZXzDflB9kBllTFTbHxibtr8DU.js"></script> <link rel="shortcut icon" href="https://orionoid.com/web/images/logo/logo256.png" type="image/x-icon"> -->
       <!-- <script src="/cdn-cgi/apps/head/dTZXzDflB9kBllTFTbHxibtr8DU.js"></script> --> <link rel="shortcut icon" href="<%=MANIFEST.logo%>" type="image/x-icon">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
@@ -218,18 +218,18 @@ button:active {
          <h2 class="description"><%=MANIFEST.description%></h2>
          <div class="separator"></div>
 
-         <h3 class="gives">This addon has more :</h3>
+       <!--  <h3 class="gives">Este complemento tiene más:</h3>
          <ul>
-            <li>Movies</li><li>Series</li><li>TV</li>
+            <li>Peliculas</li><li>Series</li><li>TV</li>
          </ul>
 
+         <div class="separator"></div>-->
+
+         <p>ℹ️ Necesitará una suscripción a IPTV para poder utilizar este complemento. Las listas M3U gratuitas no son compatibles❗<br>
+
          <div class="separator"></div>
 
-         <p>ℹ️ You will need an IPTV subscription in order to use this addon. Free M3U lists are not supported❗<br>
-
-         <div class="separator"></div>
-
-         <label class="label" for="listingOption">Listing Option:</label>
+         <label class="label" for="listingOption">Copia tu lista:</label>
          <select id="listingOption" class="input" onchange="changingListing()">
             <option value="url" selected>Login via M3U URL</option>
             <option value="api">Login via Xtream API</option>
@@ -238,7 +238,7 @@ button:active {
          <div class="separator"></div>
 
 
-         <label class="label" id="iptvURLLabel" for="iptvURL">Your IPTV M3U PLlaylist URL</label>
+         <label class="label" id="iptvURLLabel" for="iptvURL">Su URL de lista de reproducción IPTV M3U</label>
          <input type="text" id="iptvURL" class="input"  placeholder="Enter your Your IPTV M3U Playlist URL here">
          <p id="exampleIPTVurl">e.g. http://DOMAIN.COM:80/get.php?username=USER&password=PASS&type=m3u&output=ts</p>
 
@@ -254,13 +254,13 @@ button:active {
          <div class="separator"></div>
             
          <a id="installLink" class="install-link" href="#">
-            <button onclick="generateInstallLink()" name="Install">INSTALL</button>
+            <button onclick="generateInstallLink()" name="Install">INSTALAR ADDON</button>
          </a>
          
          <div class="separator"></div>
          
          <div id="installLinkInfo">
-            <p>ℹ️ If the installation button doesn't work, you can just paste the generated URL into the Stremio addon search bar:  <a href="https://user-images.githubusercontent.com/1777923/43146711-65a33ccc-8f6a-11e8-978e-4c69640e63e3.png" target="_blank">(Tutorial)</a><br>
+            <p>ℹ️ ISi el botón de instalación no funciona, puedes simplemente pegar la URL generada en la barra de búsqueda del complemento Stremio: <a href="https://user-images.githubusercontent.com/1777923/43146711-65a33ccc-8f6a-11e8-978e-4c69640e63e3.png" target="_blank">(Tutorial)</a><br>
                <input type="text" class="input" id="installURL" readonly><button onclick="generateInstallLink(); 
                copy('installURL'); 
                return false;" title="Copy to clipboard">📋</button></p>
